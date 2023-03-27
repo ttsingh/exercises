@@ -58,3 +58,9 @@ function bear(){
   bear.size(400,400);
   bear.position(800, 400);
 }
+
+function couch(){
+  let couch=createImg("images/trash-couch.png")
+  couch.size(400, 400);
+  couch.position(800, 400)
+}
