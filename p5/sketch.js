@@ -20,11 +20,14 @@ function setup() {
     //create an image element in html
     //let cat = createImg("images/cat.png");
 
+    let couch=createImg("../images/trash-couch.jpg")
+
     //select size of image
     //cat.size(200,200);
-
+    //couch.size(200, 200)
     //set the position
    // cat.position(500, 500);
+   //couch.position(500, 500);
 
     // give it an id
     //cat.id('cat');
@@ -37,7 +40,7 @@ function setup() {
     //lets make this cat move
     //cat.position((200 + a), 500);
 
-
+    couch.position(mouseX, mouseY);
     //lets make this cat move without leaving a trail - removeElements(); up at the top
     //cat.position((200 + a), 500);
 
@@ -46,6 +49,18 @@ function setup() {
     //make the bear appear when pressed
     //cat.mousePressed(bear)
 
+    //let couch;
+    //function prelaod(){
+     // couch=loadImage("../images/trash-couch.jpg")
+    //}
+    //function setup(){
+      //createCanvas(400, 400);
+    //}
+    //function draw(){
+      //background(255);
+      //Image(couch, mouseX, mouseY);
+    //}
+
   }
   
   function windowResized() {
@@ -53,20 +68,8 @@ function setup() {
     resizeCanvas(windowWidth, windowHeight);
 }
 
-function bear(){
-  let bear = createImg("images/bearhug.png");
-  bear.size(400,400);
-  bear.position(800, 400);
-}
-
-let couch;
-function prelaod(){
-  couch=loadImage("images/trash-couch.jpg")
-}
-function setup(){
-  createCanvas(400, 400);
-}
-function draw(){
-  background(255);
-  Image(couch, mouseX, mouseY);
-}
+//function bear(){
+  //let bear = createImg("images/bearhug.png");
+  //bear.size(400,400);
+  //bear.position(800, 400);
+//}

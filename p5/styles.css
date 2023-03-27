@@ -19,6 +19,7 @@ body{
 .image-title img{
     justify-content: center;
     text-align: center;
+    height: 5%;
 }
 
 #image-text {
