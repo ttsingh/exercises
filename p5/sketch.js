@@ -59,8 +59,14 @@ function bear(){
   bear.position(800, 400);
 }
 
-function couch(){
-  let couch=createImg("images/trash-couch.png")
-  couch.size(400, 400);
-  couch.position(800, 400)
+let couch;
+function prelaod(){
+  couch=loadImage("images/trash-couch.jpg")
+}
+function setup(){
+  createCanvas(400, 400);
+}
+function draw(){
+  background(255);
+  Image(couch, mouseX, mouseY);
 }
