@@ -60,34 +60,35 @@ function setup() {
 
       if(keyCode == LEFT_ARROW) {
 
-        //minus 5 in the x direction means left
+       // minus 5 in the x direction means left
         x-=5;
       }
+    }
 
-      if ((xpos>800 && xpos<1100) && (ypos>600 && ypos<900)){
+      //if ((xpos>800 && xpos<1100) && (ypos>600 && ypos<900)){
         //make bear appear
-        bear.style.display='block';
-      }
+        //bear.style.display='block';
+      //}
 
-      if ((xpos<400) && (ypos<400)){
+      //if ((xpos<400) && (ypos<400)){
 
         //hide bear again
-        bear.style.display='none';
+        //bear.style.display='none';
 
         //change scene to the next to the next one by adding 1
-        mode++;
-      }
+        //mode++;
+      //}
 
       //changing of scenes
-      if (mode == 2){
-        background(0);
-        bear.style.display='none';
-      }
-    }
+      //if (mode == 2){
+        //background(0);
+        //bear.style.display='none';
+    //  }
+    //}
     // console.log("cat is at: " + xpos + ", " + ypos);
   }
   
-  function windowResized() {
-    // resize the canvas when the screen is resized.
+ function windowResized() {
+     //resize the canvas when the screen is resized.
     resizeCanvas(windowWidth, windowHeight);
-}
+ }
