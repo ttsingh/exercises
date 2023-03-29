@@ -3,7 +3,7 @@ let y = 0;
 let xpos;
 let ypos;
 
-//let mode = 1;
+let mode = 1;
 
 let bear = document.getElementById('bear');
 
@@ -70,14 +70,14 @@ function setup() {
         bear.style.display='block';
       }
 
-      //if ((xpos<400) && (ypos<400)){
+      if ((xpos<400) && (ypos<400)){
 
         //hide bear again
-        //bear.style.display='none';
+        bear.style.display='none';
 
         //change scene to the next to the next one by adding 1
-        //mode++;
-      //}
+        mode=2;
+      }
 
       //changing of scenes
       //if (mode == 2){
