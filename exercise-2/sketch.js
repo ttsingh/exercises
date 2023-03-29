@@ -3,7 +3,7 @@ let y = 0;
 let xpos;
 let ypos;
 
-let mode = 1;
+//let mode = 1;
 
 let bear = document.getElementById('bear');
 
@@ -65,10 +65,10 @@ function setup() {
       }
     }
 
-      //if ((xpos>800 && xpos<1100) && (ypos>600 && ypos<900)){
+      if ((xpos>800 && xpos<1100) && (ypos>600 && ypos<900)){
         //make bear appear
-        //bear.style.display='block';
-      //}
+        bear.style.display='block';
+      }
 
       //if ((xpos<400) && (ypos<400)){
 
