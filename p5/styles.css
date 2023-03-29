@@ -26,3 +26,11 @@ body{
     visibility: hidden;
   }
   
+#text{
+    color:white
+}
+
+  #text:hover{
+    transform: 0.3s;
+    
+  }
