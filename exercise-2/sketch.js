@@ -23,7 +23,7 @@ function setup() {
     //create an image element in html
     let green = createImg("images/rect2.png");
     //select size of image
-    green.size(200,200);
+    green.size(200,100);
      // give it an id
      green.id('green');
 

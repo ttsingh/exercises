@@ -20,6 +20,7 @@ body{
 }
 
 #blue{
+    size: 10%;
     display: none;
     z-index: 2;
 }
