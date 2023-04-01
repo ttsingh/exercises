@@ -11,15 +11,22 @@ body{
     left: 0;
 }
 
-.offer{
-    border: 1px solid black;
+.here{
+    border: 3px dashed black;
     position: absolute;
     width: 200px;
     top: 600;
     left: 800;
 }
 
-#bear{
+#blue{
     display: none;
     z-index: 2;
+}
+
+.here p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+    font-size: larger;
+    font-style: italic;
 }

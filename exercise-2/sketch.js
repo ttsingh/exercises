@@ -5,7 +5,7 @@ let ypos;
 
 let mode = 1;
 
-let bear = document.getElementById('bear');
+let blue = document.getElementById('blue');
 
 
 function setup() {
@@ -19,13 +19,13 @@ function setup() {
   function draw() {
 
     removeElements();
-    //lets manipulate the DOM and make our cat move with the arrow keys
+    //lets manipulate the DOM and make green move with the arrow keys
     //create an image element in html
-    let cat = createImg("images/cat.png");
+    let green = createImg("images/rect2.png");
     //select size of image
-    cat.size(200,200);
+    green.size(200,200);
      // give it an id
-     cat.id('cat');
+     green.id('green');
 
     //set the position
     //create arithmatic for x and y position. this lets us read out the position
@@ -34,7 +34,7 @@ function setup() {
 
   
     //position the cat based on the arrow keys
-    cat.position(xpos, ypos);
+    green.position(xpos, ypos);
 
 
 //controls using arrow keys
@@ -66,27 +66,28 @@ function setup() {
     }
 
       if ((xpos>800 && xpos<1100) && (ypos>600 && ypos<900)){
-        //make bear appear
-        bear.style.display='block';
+        //make blue appear
+        blue.style.display='block';
       }
 
       if ((xpos<400) && (ypos<400)){
 
-        //hide bear again
-        bear.style.display='none';
+        //hide blue again
+        blue.style.display='none';
 
         //change scene to the next to the next one by adding 1
         mode=2;
       }
 
       //changing of scenes
-      //if (mode == 2){
-        //background(0);
-        //bear.style.display='none';
-    //  }
-    //}
-    // console.log("cat is at: " + xpos + ", " + ypos);
-  }
+      if (mode == 2){
+        background(0);
+        blue.style.display='none';
+      }
+
+    }
+    // console.log("green is at: " + xpos + ", " + ypos);
+  
   
  function windowResized() {
      //resize the canvas when the screen is resized.
