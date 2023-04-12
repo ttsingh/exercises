@@ -9,8 +9,7 @@ function setup() {
     let cnv = createCanvas(windowWidth, windowHeight);
     cnv.parent('mySketch');
 
-    result = createElement('p', 'type a color');
-    result.style('font-size', '30px');
+     result = createElement('p', 'type a color');
     result.style('margin', '0px');
     result.style('text-align', 'center');
     result.id('answer');
@@ -56,7 +55,7 @@ function output() {
 
   let Answer1 = document.getElementById('answer-1');
   colorInput.appendChild(Answer1);
-  //Answer1.innerHTML = answers;
+  Answer1.innerHTML = answers;
 
   if (answers == "blue"){
     background(0,0,255);
@@ -70,7 +69,16 @@ function output() {
   } else if (answers == "green"){
     background(0,255,0);
     Answer1.innerHTML = answers;
+  }else if (answers =="pink"){
+    background(252,3,161);
+    Answer1.innerHTML = answers;
+  }else if (answers == 'yellow'){
+    background(255,204,0);
+    Answer1.innerHTML = answers;
+  } else if (answer == 'sea green'){
+    background(43,120,89);
+    Answer1.innerHTML=answers;
   } else {
     Answer1.innerHTML = "i don't know that color";
-  }
+}
 }
